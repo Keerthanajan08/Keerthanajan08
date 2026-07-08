@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Keerthanajan 👋</h1>
+<h1 align="center">Hi, I'm Keerthana Sasidaran 👋</h1>
 <h3 align="center">AI/ML Engineer • NLP & Multimodal Systems • M.Tech, CSE</h3>
 
 <p align="center">
@@ -39,19 +39,32 @@
 
 **Languages**
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)
-![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-**AI / ML / Data**
+### AI / Machine Learning
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Hugging%20Face](https://img.shields.io/badge/-Hugging%20Face-FFD21E?style=flat-square)
+![Transformers](https://img.shields.io/badge/-Transformers-FFCC00?style=flat-square)
 ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 
-**Tools & Platforms**
+### NLP & Generative AI
+![Llama%202](https://img.shields.io/badge/-Llama%202-0467DF?style=flat-square)
+![Whisper](https://img.shields.io/badge/-Whisper-412991?style=flat-square)
+![Google%20Speech%20API](https://img.shields.io/badge/-Google%20Speech%20API-4285F4?style=flat-square&logo=google&logoColor=white)
+
+### Backend & APIs
+![REST%20API](https://img.shields.io/badge/-REST%20API-009688?style=flat-square)
 ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![PowerShell](https://img.shields.io/badge/-PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
-![Hyper-V](https://img.shields.io/badge/-Hyper--V-0078D4?style=flat-square&logo=windows&logoColor=white)
+
+### Tools
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Hyper-V](https://img.shields.io/badge/-Hyper--V-0078D4?style=flat-square)
+![Windows%20PE](https://img.shields.io/badge/-Windows%20PE-0078D6?style=flat-square&logo=windows&logoColor=white)
 
 ---
 
@@ -87,7 +100,7 @@ Built a remote diagnostic solution using PXE Boot and Windows PE.
 ### 📫 Let's Connect
 
 <!-- Add your links here, e.g.: -->
-<!-- [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](your-linkedin-url) -->
-<!-- [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your-email) -->
+<!-- [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keerthana-sasidaran-64ba24368/) -->
+<!-- [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](keerthana08sasidaran@gmail.com) -->
 
 <p align="center"><i>Open to opportunities in AI/ML Engineering, NLP, and Applied Research.</i></p>
