@@ -11,7 +11,7 @@
 
 ### 🔬 About Me
 
-- 🎓 M.Tech in Computer Science (AI/ML specialization), MSRIT — CGPA 8.57, First Class with Distinction
+- 🎓 M.Tech in Computer Science, MSRIT — CGPA 8.57, First Class with Distinction
 - 🎓 B.Tech in Computer Science, MSRUAS — CGPA 8.88/10
 - 🧠 Research focus: Multimodal AI, NLP, Large Language Models
 - 📄 Published in **IEEE Xplore (2024)** and an **IGI Global** book chapter
