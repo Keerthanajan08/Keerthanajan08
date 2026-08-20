@@ -1,10 +1,10 @@
 <h1 align="center">Hi, I'm Keerthana Sasidaran 👋</h1>
-<h3 align="center">AI/ML Engineer • NLP & Multimodal Systems • M.Tech, CSE</h3>
+<h3 align="center">AI/ML Engineer • NLP, LLMs & Agentic Systems • M.Tech, CSE</h3>
 
 <p align="center">
   Building at the intersection of Machine Learning, NLP, and Large Language Models —
-  from fine-tuning LLaMA 2 for hate speech detection to automating validation pipelines
-  at Philips Innovation Campus.
+  from fine-tuning LLaMA 2 for hate speech detection to shipping open-source
+  agentic middleware and production-shaped LLM infrastructure.
 </p>
 
 ---
@@ -13,25 +13,40 @@
 
 - 🎓 M.Tech in Computer Science, MSRIT — CGPA 8.57, First Class with Distinction
 - 🎓 B.Tech in Computer Science, MSRUAS — CGPA 8.88/10
-- 🧠 Research focus: Multimodal AI, NLP, Large Language Models
+- 🧠 Research focus: Multimodal AI, NLP, LLM Systems, Agentic Middleware
 - 📄 Published in **IEEE Xplore (2024)** and an **IGI Global** book chapter
+- 🔀 Open-source contributor — PR merged into **Lamatic/AgentKit**
 - 🏆 1st Place, IGT Bangalore Hackathon
 - 💼 Former Software Engineering Intern @ **Philips Innovation Campus**
 - 📚 Currently pursuing the **AWS AI & ML Scholars** program
 
 ---
 
-### 🚀 Featured Research
+### 🚀 Featured Projects
 
-**Multimodal Hate Speech Detection using Fine-Tuned LLaMA 2**
-*IEEE Xplore, 2024*
+**PII Sovereign Guardrail — Lamatic AgentKit** · *Open Source, PR Merged*
+- Built a middleware kit that masks PII (emails, phone numbers, names, free-text mentions) before prompts reach an external LLM, using deterministic regex plus LLM-based NER
+- Designed to fail closed and never persist the placeholder-to-real-value token map beyond a single request
+- 🔗 [View merged PR](https://github.com/Lamatic/AgentKit/pulls?q=is%3Apr+author%3AKeerthanajan08)
 
-- Built an end-to-end multimodal pipeline processing **text, audio, and video**
-- Fine-tuned **LLaMA 2**, integrated **Whisper** and the **Google Speech Recognition API** for audio transcription
-- Benchmarked against BERT, RoBERTa, DistilBERT, ELECTRA, and XLNet
-- Achieved **97% accuracy** and a **0.96 F1 score**
+**LLM Prompt-Security Gateway**
+- FastAPI service detecting pattern-based and semantic leakage of sensitive data in outbound LLM prompts
+- Two-stage detection pipeline (regex + embedding-based semantic search), composed with LangChain's Runnable interface
+- Redis-backed verdict cache with a tuned similarity threshold; pytest-covered
+- 🔗 [Repository](https://github.com/Keerthanajan08/LLM-Prompt-Security-Gateway)
 
-📖 Also published: *"Machine Learning for Big Data"* — book chapter in *Applications of Big Data in Large- and Small-Scale Systems* (IGI Global)
+**Semantic Cache Gateway**
+- FastAPI service reducing redundant LLM API calls via cosine-similarity matching over cached queries
+- Benchmarked: **5x latency reduction on cache hits** (13ms vs. 65ms average), with a full precision/coverage tradeoff analysis across similarity thresholds
+- 🔗 [Repository](https://github.com/Keerthanajan08/Semantic-Cache-Gateway)
+
+**Multimodal Hate Speech Detection using Fine-Tuned LLaMA 2** · *IEEE Xplore, 2024*
+- End-to-end multimodal pipeline processing **text, audio, and video**
+- Fine-tuned **LLaMA 2**, integrated **Whisper** and **Google Speech API** for transcription
+- Benchmarked against BERT, RoBERTa, DistilBERT, ELECTRA, and XLNet — achieved **0.96 F1 score**
+- 🔗 [Repository](https://github.com/Keerthanajan08/MultiLingualHateSpeech)
+
+📖 Also published: *"Machine Learning for Big Data"* — book chapter in [Applications of Big Data in Large- and Small-Scale Systems](https://www.igi-global.com/chapter/machine-learning-for-big-data/273920) (IGI Global)
 
 ---
 
@@ -41,7 +56,7 @@
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-### AI / Machine Learning
+**AI / Machine Learning**
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -51,18 +66,24 @@
 ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 
-### NLP & Generative AI
+**Generative AI, LLMs & Agentic Systems**
 ![Llama%202](https://img.shields.io/badge/-Llama%202-0467DF?style=flat-square)
+![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat-square)
+![RAG](https://img.shields.io/badge/-RAG-6E56CF?style=flat-square)
 ![Whisper](https://img.shields.io/badge/-Whisper-412991?style=flat-square)
 ![Google%20Speech%20API](https://img.shields.io/badge/-Google%20Speech%20API-4285F4?style=flat-square&logo=google&logoColor=white)
+![Prompt%20Engineering](https://img.shields.io/badge/-Prompt%20Engineering-FF7A00?style=flat-square)
 
-### Backend & APIs
+**Backend & Infrastructure**
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![REST%20API](https://img.shields.io/badge/-REST%20API-009688?style=flat-square)
 ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 
-### Tools
+**Tools**
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![pytest](https://img.shields.io/badge/-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 ![Hyper-V](https://img.shields.io/badge/-Hyper--V-0078D4?style=flat-square)
 ![Windows%20PE](https://img.shields.io/badge/-Windows%20PE-0078D6?style=flat-square&logo=windows&logoColor=white)
 
@@ -99,8 +120,14 @@ Built a remote diagnostic solution using PXE Boot and Windows PE.
 
 ### 📫 Let's Connect
 
-<!-- Add your links here, e.g.: -->
-<!-- [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/keerthana-sasidaran-64ba24368/) -->
-<!-- [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](keerthana08sasidaran@gmail.com) -->
+<p align="center">
+  <a href="https://www.linkedin.com/in/keerthana-sasidaran-64ba24368/">
+    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:keerthana08sasidaran@gmail.com">
+    <img src="https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
 
 <p align="center"><i>Open to opportunities in AI/ML Engineering, NLP, and Applied Research.</i></p>
+
