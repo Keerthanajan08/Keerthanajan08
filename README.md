@@ -27,7 +27,7 @@
 **PII Sovereign Guardrail — Lamatic AgentKit** · *Open Source, PR Merged*
 - Built a middleware kit that masks PII (emails, phone numbers, names, free-text mentions) before prompts reach an external LLM, using deterministic regex plus LLM-based NER
 - Designed to fail closed and never persist the placeholder-to-real-value token map beyond a single request
-- 🔗 [View merged PR](https://github.com/Lamatic/AgentKit/pulls?q=is%3Apr+author%3AKeerthanajan08)
+- 🔗 [View merged PR]([https://github.com/Lamatic/AgentKit/pulls?q=is%3Apr+author%3AKeerthanajan08](https://github.com/Lamatic/AgentKit/pull/335))
 
 **LLM Prompt-Security Gateway**
 - FastAPI service detecting pattern-based and semantic leakage of sensitive data in outbound LLM prompts
