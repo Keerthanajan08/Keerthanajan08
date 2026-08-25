@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Keerthana Sasidaran 👋</h1>
-<h3 align="center">AI/ML Engineer • NLP, LLMs & Agentic Systems • M.Tech, CSE</h3>
+<h3 align="center">Software AI Engineer • NLP, LLMs & Agentic Systems • M.Tech, CSE</h3>
 
 <p align="center">
   Building at the intersection of Machine Learning, NLP, and Large Language Models —
