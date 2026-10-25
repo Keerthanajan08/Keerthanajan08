@@ -1,133 +1,234 @@
-<h1 align="center">Hi, I'm Keerthana Sasidaran 👋</h1>
-<h3 align="center">Software AI Engineer • NLP, LLMs & Agentic Systems • M.Tech, CSE</h3>
+# Hi, I'm Keerthana Sasidaran
 
-<p align="center">
-  Building at the intersection of Machine Learning, NLP, and Large Language Models —
-  from fine-tuning LLaMA 2 for hate speech detection to shipping open-source
-  agentic middleware and production-shaped LLM infrastructure.
-</p>
+### Software Engineer \| AI/ML Systems · LLM Infrastructure · Backend Engineering
 
----
+I build practical software at the intersection of AI and backend
+engineering, spanning LLM security, semantic caching, multimodal machine
+learning, data analytics, and predictive maintenance.
 
-### 🔬 About Me
+My focus is on building testable systems, evaluating model performance,
+and turning AI capabilities into usable applications and backend
+services.
 
-- 🎓 M.Tech in Computer Science, MSRIT — CGPA 8.57, First Class with Distinction
-- 🎓 B.Tech in Computer Science, MSRUAS — CGPA 8.88/10
-- 🧠 Research focus: Multimodal AI, NLP, LLM Systems, Agentic Middleware
-- 📄 Published in **IEEE Xplore (2024)** and an **IGI Global** book chapter
-- 🔀 Open-source contributor — PR merged into **Lamatic/AgentKit**
-- 🏆 1st Place, IGT Bangalore Hackathon
-- 💼 Former Software Engineering Intern @ **Philips Innovation Campus**
-- 📚 Currently pursuing the **AWS AI & ML Scholars** program
+-   **Focus areas:** Software Engineering, AI/ML, LLM Infrastructure,
+    Backend Systems
+-   **Research:** Published work in IEEE Xplore
+-   **Open source:** Contributor to Lamatic AgentKit
+-   **Location:** Bengaluru, India
 
----
+------------------------------------------------------------------------
 
-### 🚀 Featured Projects
+## Featured Projects
 
-**PII Sovereign Guardrail — Lamatic AgentKit** · *Open Source, PR Merged*
-- Built a middleware kit that masks PII (emails, phone numbers, names, free-text mentions) before prompts reach an external LLM, using deterministic regex plus LLM-based NER
-- Designed to fail closed and never persist the placeholder-to-real-value token map beyond a single request
-- 🔗 [Repository](https://github.com/Lamatic/AgentKit/tree/main/kits/pii-sovereign-guardrail)
-  
-**LLM Prompt-Security Gateway**
-- FastAPI service detecting pattern-based and semantic leakage of sensitive data in outbound LLM prompts
-- Two-stage detection pipeline (regex + embedding-based semantic search), composed with LangChain's Runnable interface
-- Redis-backed verdict cache with a tuned similarity threshold; pytest-covered
-- 🔗 [Repository](https://github.com/Keerthanajan08/LLM-Prompt-Security-Gateway)
+### 1. [LLM Prompt-Security Gateway](https://github.com/Keerthanajan08/LLM-Prompt-Security-Gateway)
 
-**Semantic Cache Gateway**
-- FastAPI service reducing redundant LLM API calls via cosine-similarity matching over cached queries
-- Benchmarked: **5x latency reduction on cache hits** (13ms vs. 65ms average), with a full precision/coverage tradeoff analysis across similarity thresholds
-- 🔗 [Repository](https://github.com/Keerthanajan08/Semantic-Cache-Gateway)
+A security gateway for LLM traffic designed to detect sensitive
+information, semantic data leakage, and prompt injection.
 
-**Multimodal Hate Speech Detection using Fine-Tuned LLaMA 2** · *IEEE Xplore, 2024*
-- End-to-end multimodal pipeline processing **text, audio, and video**
-- Fine-tuned **LLaMA 2**, integrated **Whisper** and **Google Speech API** for transcription
-- Benchmarked against BERT, RoBERTa, DistilBERT, ELECTRA, and XLNet — achieved **0.96 F1 score**
-- 🔗 [Repository](https://github.com/Keerthanajan08/MultiLingualHateSpeech)
+-   Scans prompts and model responses for sensitive information.
+-   Combines pattern-based detection with embedding-based semantic
+    search.
+-   Includes a Redis-backed verdict cache and an OpenAI-compatible API
+    interface.
+-   Uses automated tests to validate security-related behavior.
 
-📖 Also published: *"Machine Learning for Big Data"* — book chapter in [Applications of Big Data in Large- and Small-Scale Systems](https://www.igi-global.com/chapter/machine-learning-for-big-data/273920) (IGI Global)
+**Technologies:** Python, FastAPI, NLP, Embeddings, Redis, LangChain,
+pytest
 
----
+### 2. [Semantic Cache Gateway](https://github.com/Keerthanajan08/Semantic-Cache-Gateway)
 
-### 🛠️ Tech Stack
+A FastAPI gateway that caches semantically similar queries to reduce
+redundant LLM calls and latency. When a suitable cache match is
+unavailable, it falls back to retrieval-augmented generation (RAG).
 
-**Languages**
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+**Benchmark:** 15 paraphrased support queries
 
-**AI / Machine Learning**
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white)
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Hugging%20Face](https://img.shields.io/badge/-Hugging%20Face-FFD21E?style=flat-square)
-![Transformers](https://img.shields.io/badge/-Transformers-FFCC00?style=flat-square)
-![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+  ------------------------------------------------------------------------
+  Similarity   Cache-hit rate       Avg. hit      Avg. miss      LLM calls
+  threshold                          latency        latency        avoided
+  ------------ -------------- -------------- -------------- --------------
+  0.90                   6.7%        13.0 ms        64.9 ms           1/15
 
-**Generative AI, LLMs & Agentic Systems**
-![Llama%202](https://img.shields.io/badge/-Llama%202-0467DF?style=flat-square)
-![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat-square)
-![RAG](https://img.shields.io/badge/-RAG-6E56CF?style=flat-square)
-![Whisper](https://img.shields.io/badge/-Whisper-412991?style=flat-square)
-![Google%20Speech%20API](https://img.shields.io/badge/-Google%20Speech%20API-4285F4?style=flat-square&logo=google&logoColor=white)
-![Prompt%20Engineering](https://img.shields.io/badge/-Prompt%20Engineering-FF7A00?style=flat-square)
+  0.85                   6.7%        13.8 ms        65.2 ms           1/15
 
-**Backend & Infrastructure**
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![REST%20API](https://img.shields.io/badge/-REST%20API-009688?style=flat-square)
-![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+  0.80                   6.7%        15.8 ms        66.2 ms           1/15
 
-**Tools**
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![pytest](https://img.shields.io/badge/-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![Hyper-V](https://img.shields.io/badge/-Hyper--V-0078D4?style=flat-square)
-![Windows%20PE](https://img.shields.io/badge/-Windows%20PE-0078D6?style=flat-square&logo=windows&logoColor=white)
+  0.75                  20.0%        17.3 ms        66.8 ms           3/15
 
----
+  0.70                  40.0%        13.6 ms        65.4 ms           6/15
+  ------------------------------------------------------------------------
 
-### 💼 Professional Experience
+The benchmark illustrates the trade-off between cache reuse and the risk
+of incorrect semantic matches as the similarity threshold changes.
 
-**Software Engineering Intern — Philips Innovation Campus** · 11 months
-- Performed functional, integration, and automation testing across the software lifecycle
-- Automated validation workflows with **Postman** and **PowerShell**, meaningfully cutting manual validation effort
-- Debugged memory consumption, platform stability, and installation defects using memory profiling and log analysis
-- Built PoC environments with **Hyper-V** and **Windows PE** to validate installation workflows and catch defects early
-- Developed an ML-driven **predictive maintenance** system to reduce downtime and support early fault detection
+**Technologies:** Python, FastAPI, Sentence Transformers, Redis, RAG,
+pytest
 
----
+### 3. [AI Data Analysis & ML Agent](https://github.com/Keerthanajan08/AI_Data_Analysis_ML_Agent)
 
-### 🏆 Hackathons
+An end-to-end Streamlit application for analyzing CSV and Excel datasets
+and completing a first-pass machine-learning workflow.
 
-**IGT Bangalore Hackathon — 1st Place**
-Built a remote diagnostic solution using PXE Boot and Windows PE.
+-   Automates dataset profiling, column detection, missing-value checks,
+    duplicate checks, and data-quality scoring.
+-   Generates visualizations, correlation summaries, and ML task
+    suggestions.
+-   Trains and compares baseline classification and regression models.
+-   Exports trained scikit-learn pipelines and supports single-sample
+    predictions.
+-   Generates downloadable Markdown, Word, and PDF reports.
+-   Supports optional AI-assisted insights through OpenAI and Gemini.
 
----
+**Technologies:** Python, Streamlit, Pandas, NumPy, scikit-learn, OpenAI
+API, Gemini API
 
-### 📜 Certifications
+### 4. [Multimodal Hate Speech Detection](https://github.com/Keerthanajan08/MultiLingualHateSpeech)
 
-- Deep Learning Specialization — DeepLearning.AI
-- Advanced Deep Learning Specialist — IBM Digital Credential
-- Machine Learning with Python — IBM
-- Introduction to Deep Learning & Neural Networks with Keras — IBM
-- Deep Learning with Keras and TensorFlow — IBM
-- AWS AI & ML Scholars — *in progress*
+An IEEE Xplore research project exploring hate-speech detection across
+text, audio, and video.
 
----
+-   Fine-tuned LLaMA 2 for hate-speech classification.
+-   Integrated Whisper and Google Speech API for audio transcription.
+-   Developed a multimodal processing pipeline for text, audio, and
+    video inputs.
+-   The existing project profile reports an **F1 score of 0.96**.
 
-### 📫 Let's Connect
+**Technologies:** Python, LLaMA 2, Hugging Face, Whisper, ASR, PEFT
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/keerthana-sasidaran-64ba24368/">
-    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:keerthana08sasidaran@gmail.com">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+### 5. [Credit Risk & Loan Portfolio Analytics](https://github.com/Keerthanajan08/Credit_Risk_Loan_Portfolio_Analysis)
 
-<p align="center"><i>Open to opportunities in AI/ML Engineering, NLP, and Applied Research.</i></p>
+An end-to-end credit-risk analytics project examining **2.26 million
+LendingClub loans** using Python, SQL, dbt, Snowflake, and Tableau.
 
+-   Analyzes default risk across loan grades, borrower profiles,
+    geography, and loan vintages.
+-   Distinguishes default frequency from total dollar-loss
+    concentration.
+-   Identifies Grade F--G loans as the highest-default-risk segment,
+    with reported default rates of 37--41%.
+-   Highlights concentration risk in high-volume Grade B--C segments,
+    with reported losses of approximately \$452M--\$592M per segment.
+-   Includes SQL analysis, dbt data models, exploratory analysis, and a
+    five-page Tableau dashboard.
+
+**Technologies:** Python, Pandas, SQL, dbt, Snowflake, Tableau
+
+------------------------------------------------------------------------
+
+## Open-Source Contributions
+
+### [Lamatic AgentKit --- PII Sovereign Guardrail](https://github.com/Lamatic/AgentKit/pull/335)
+
+Contributed TypeScript middleware for protecting personally identifiable
+information in LLM workflows.
+
+-   Implemented sensitive-data handling with fail-closed behavior.
+-   Focused on protecting sensitive values during external LLM
+    interactions.
+-   Contributed through a merged pull request.
+
+**Technologies:** TypeScript, LLM Security, Agent Systems
+
+------------------------------------------------------------------------
+
+## Professional Experience
+
+### Software Engineer Intern --- Phoenix Wireless Systems Pvt. Ltd.
+
+*Oct 2025 -- Aug 2026 · Bengaluru, India*
+
+-   Developed Python/FastAPI backend services for RF equipment testing,
+    including REST APIs, input validation, PostgreSQL persistence,
+    test-run management, and equipment-history retrieval.
+-   Automated RF test analysis by transforming raw measurements into
+    standardized results, applying engineering validation rules,
+    flagging out-of-limit conditions, and generating reports ---
+    reducing analysis time from **2 hours to 20 minutes (83%
+    reduction)**.
+-   Built equipment diagnostics workflows integrating test history, live
+    measurements, and maintenance records to investigate abnormal
+    readings.
+-   Integrated ML fault detection, achieving **0.89 F1 for anomaly
+    detection** and **0.91 macro-F1 across five fault categories**.
+-   Developed predictive-maintenance workflows using SQL and Pandas to
+    combine equipment test, service, and failure data and generate
+    equipment-risk scores.
+
+**Technologies:** Python, FastAPI, REST APIs, PostgreSQL, SQL, Pandas,
+Machine Learning, RF Analytics
+
+### Intern --- Philips Innovation Campus
+
+*Nov 2023 -- Sep 2024 · Bengaluru, India*
+
+-   Worked on ML-driven predictive maintenance for early defect
+    detection in diagnostic devices.
+-   Automated functional and integration validation using Postman-based
+    API workflows and PowerShell, reducing validation time by **over
+    95%**.
+-   Investigated hard-to-reproduce defects involving memory consumption,
+    installation behavior, and platform stability through log analysis
+    and backend debugging.
+-   Prototyped a virtualized diagnostic testing environment using
+    Hyper-V and Windows PE to validate installation workflows across
+    production-like configurations.
+-   Developed a PXE-bootable diagnostics framework for remote
+    troubleshooting and system recovery.
+
+**Recognition:** First Place --- Philips IGT Bangalore Hackathon.
+
+**Technologies:** Machine Learning, Python, Postman, PowerShell,
+Hyper-V, Windows PE, PXE, Software Validation
+
+------------------------------------------------------------------------
+
+## Technical Skills
+
+-   **Languages:** Python, SQL, JavaScript, TypeScript, C#
+-   **AI/ML:** PyTorch, scikit-learn, Pandas, NumPy, NLP, LLMs,
+    Transformers, Embeddings, Multimodal AI, ASR, Anomaly Detection,
+    Predictive Maintenance
+-   **LLM Engineering:** RAG, Semantic Caching, LangChain, LangGraph,
+    MCP, Prompt Engineering, LLM Security, Agentic Systems, Hugging
+    Face, LLaMA 2
+-   **Backend & APIs:** FastAPI, Flask, Django, REST APIs, PostgreSQL,
+    MySQL, Redis
+-   **Data & Analytics:** SQL, dbt, Snowflake, Tableau, Power BI, Data
+    Pipelines, Feature Engineering
+-   **Engineering Tools:** Git, GitHub, Docker, pytest, Postman,
+    PowerShell, Hyper-V, Windows PE
+
+------------------------------------------------------------------------
+
+## Education
+
+### M.Tech --- Computer Science & Engineering
+
+**Ramaiah Institute of Technology (MSRIT)**\
+CGPA: 8.57/10 · First Class with Distinction · 2022--2024
+
+### B.Tech --- Computer Science & Engineering
+
+**M.S. Ramaiah University of Applied Sciences (MSRUAS)**\
+CGPA: 8.88/10 · 2018--2022
+
+------------------------------------------------------------------------
+
+## Publications & Recognition
+
+-   Research publication in IEEE Xplore
+-   Book chapter published by IGI Global
+-   First Place --- Philips IGT Bangalore Hackathon
+-   AWS AI & ML Scholars program
+-   Merged open-source contribution to Lamatic AgentKit
+
+------------------------------------------------------------------------
+
+## Connect
+
+-   **GitHub:** [@Keerthanajan08](https://github.com/Keerthanajan08)
+-   **LinkedIn:** [Keerthana
+    Sasidaran](https://www.linkedin.com/in/keerthana-sasidaran-64ba24368/)
+-   **Email:** [keerthana08sasidaran@gmail.com](mailto:keerthana08sasidaran@gmail.com)
+
+Interested in software engineering, AI/ML engineering, backend systems, and LLM infrastructure.
