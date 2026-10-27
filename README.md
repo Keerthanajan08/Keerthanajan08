@@ -93,7 +93,7 @@ An end-to-end analysis of **2.26 million LendingClub loans**, examining default 
 
 ## 🌱 Open Source
 
-### 🛡️ [Lamatic AgentKit — PII Sovereign Guardrail](https://github.com/Lamatic/AgentKit/pull/335)
+### 🛡️ [Lamatic AgentKit — PII Sovereign Guardrail]([https://github.com/Lamatic/AgentKit/pull/335](https://github.com/Lamatic/AgentKit/tree/main/kits/pii-sovereign-guardrail))
 
 Contributed TypeScript middleware for protecting personally identifiable information in LLM workflows.
 
